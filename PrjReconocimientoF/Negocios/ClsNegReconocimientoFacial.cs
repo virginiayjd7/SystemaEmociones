@@ -64,6 +64,18 @@ namespace PrjReconocimientoF.Negocios
             Fuente = new BindingSource();
             Fuente.DataSource = Tabla;
         }
+        public DataTable ListarAdministrador()
+        {
+            string Consulta = "Select Id,Codigo,Nombres,Fecha,HoraE,HoraS from Asistencia;";
+            ClsConexion.Conectar();//            
+            Adaptador = new OleDbDataAdapter(Consulta, ClsConexion.Conex);
+            Constructor = new OleDbCommandBuilder(Adaptador);
+            Tabla = new DataTable("Asistencia");
+            Adaptador.Fill(Tabla);
+            Fuente = new BindingSource();
+            Fuente.DataSource = Tabla;
+            return Tabla;
+        }
 
         public void MtdModificar(ClsEntAsistencia objasis)
         {

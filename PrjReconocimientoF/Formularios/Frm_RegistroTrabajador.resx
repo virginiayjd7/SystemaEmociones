@@ -158,16 +158,6 @@
         z/7xT+Y/giD4CdCnM8Ppz6ChAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="checkBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPdJREFUSEvd
-        lTELglAURv0TDTXqExF9UWNrbdFvb0if1VgUUouLe90LXxFyE+02RAcORN97Rygo72eYrs3A5sHe5mbL
-        r/H2d4h20SjNjSNv0MVFPMSsIy78kIKHl/jDQ+ICg2OfYTe+pVDZCL9ajosgxfF+JC6cpM5chWjTC5/F
-        tW7YjZnRxaoRarPiO7jeztj5C7pQNwJdrOk7mSPzHjrY9pm3m5kSmX6IMRKzHinOYtYjxVnMeqQ4i1mP
-        FGcx65HiLGY9UpzFrEeKs5j1SHEWsx4pzmLWI8VZzHroZ/skPOCIWU+ahSv6Lz4/4/RAW/hLzH+N590B
-        AetPcZ+N4+EAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="btnocultar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAQ1JREFUSEtj
@@ -178,7 +168,17 @@
         Sr3xUCnaA2APgh1oeTNNg3eYAQYGALQot1uLDCreAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnback.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnShitt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPdJREFUSEvd
+        lTELglAURv0TDTXqExF9UWNrbdFvb0if1VgUUouLe90LXxFyE+02RAcORN97Rygo72eYrs3A5sHe5mbL
+        r/H2d4h20SjNjSNv0MVFPMSsIy78kIKHl/jDQ+ICg2OfYTe+pVDZCL9ajosgxfF+JC6cpM5chWjTC5/F
+        tW7YjZnRxaoRarPiO7jeztj5C7pQNwJdrOk7mSPzHjrY9pm3m5kSmX6IMRKzHinOYtYjxVnMeqQ4i1mP
+        FGcx65HiLGY9UpzFrEeKs5j1SHEWsx4pzmLWI8VZzHroZ/skPOCIWU+ahSv6Lz4/4/RAW/hLzH+N590B
+        AetPcZ+N4+EAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="btnretroceso.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAQVJREFUSEtj
         GAWjYGQC4zNK/NpXtXmgXPoAvWsqFjpXVT7oXFY5DhWiPdC+ouyoc0XlKxD/B+I3UGHaAqAPHZAspY/F

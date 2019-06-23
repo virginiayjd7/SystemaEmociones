@@ -26,7 +26,7 @@ namespace PrjReconocimientoF.Formularios
 
         private void pcbreconocimiento_Click(object sender, EventArgs e)
         {
-            Frm_AsitenciaTrabajador frm = new Frm_AsitenciaTrabajador();
+            Frm_Login frm = new Frm_Login();
             frm.Show();
             this.Hide();
         }

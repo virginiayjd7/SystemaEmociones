@@ -48,19 +48,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pteclado = new System.Windows.Forms.Panel();
             this.btn1 = new System.Windows.Forms.Button();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btn2 = new System.Windows.Forms.Button();
-            this.btnspace = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
             this.btnocultar = new System.Windows.Forms.Button();
             this.btn4 = new System.Windows.Forms.Button();
-            this.btnpunto = new System.Windows.Forms.Button();
             this.btn5 = new System.Windows.Forms.Button();
             this.btnnum = new System.Windows.Forms.Button();
             this.btn6 = new System.Windows.Forms.Button();
-            this.btncoma = new System.Windows.Forms.Button();
             this.btn10 = new System.Windows.Forms.Button();
-            this.btnback = new System.Windows.Forms.Button();
             this.btn9 = new System.Windows.Forms.Button();
             this.btn26 = new System.Windows.Forms.Button();
             this.btn8 = new System.Windows.Forms.Button();
@@ -82,6 +77,11 @@
             this.btn20 = new System.Windows.Forms.Button();
             this.btn19 = new System.Windows.Forms.Button();
             this.pcbvolver = new System.Windows.Forms.PictureBox();
+            this.btnShitt = new System.Windows.Forms.Button();
+            this.btnEspacio = new System.Windows.Forms.Button();
+            this.btnretroceso = new System.Windows.Forms.Button();
+            this.btnpunto = new System.Windows.Forms.Button();
+            this.btncoma = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
@@ -170,6 +170,7 @@
             this.txt_codigo.Name = "txt_codigo";
             this.txt_codigo.Size = new System.Drawing.Size(102, 20);
             this.txt_codigo.TabIndex = 33;
+            this.txt_codigo.Click += new System.EventHandler(this.txt_codigo_Click);
             this.txt_codigo.TextChanged += new System.EventHandler(this.txt_codigo_TextChanged);
             // 
             // txt_nombre
@@ -180,6 +181,7 @@
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(214, 20);
             this.txt_nombre.TabIndex = 32;
+            this.txt_nombre.Click += new System.EventHandler(this.txt_nombre_Click);
             this.txt_nombre.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
             // 
             // label2
@@ -311,25 +313,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(347, 562);
             this.panel1.TabIndex = 56;
+            this.panel1.Click += new System.EventHandler(this.panel1_Click);
             // 
             // pteclado
             // 
             this.pteclado.BackColor = System.Drawing.Color.Black;
             this.pteclado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pteclado.Controls.Add(this.btnShitt);
+            this.pteclado.Controls.Add(this.btnEspacio);
+            this.pteclado.Controls.Add(this.btnretroceso);
+            this.pteclado.Controls.Add(this.btnpunto);
+            this.pteclado.Controls.Add(this.btncoma);
             this.pteclado.Controls.Add(this.btn1);
-            this.pteclado.Controls.Add(this.checkBox1);
             this.pteclado.Controls.Add(this.btn2);
-            this.pteclado.Controls.Add(this.btnspace);
             this.pteclado.Controls.Add(this.btn3);
             this.pteclado.Controls.Add(this.btnocultar);
             this.pteclado.Controls.Add(this.btn4);
-            this.pteclado.Controls.Add(this.btnpunto);
             this.pteclado.Controls.Add(this.btn5);
             this.pteclado.Controls.Add(this.btnnum);
             this.pteclado.Controls.Add(this.btn6);
-            this.pteclado.Controls.Add(this.btncoma);
             this.pteclado.Controls.Add(this.btn10);
-            this.pteclado.Controls.Add(this.btnback);
             this.pteclado.Controls.Add(this.btn9);
             this.pteclado.Controls.Add(this.btn26);
             this.pteclado.Controls.Add(this.btn8);
@@ -367,20 +370,6 @@
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AllowDrop = true;
-            this.checkBox1.Appearance = System.Windows.Forms.Appearance.Button;
-            this.checkBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.checkBox1.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Image = ((System.Drawing.Image)(resources.GetObject("checkBox1.Image")));
-            this.checkBox1.Location = new System.Drawing.Point(3, 68);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(53, 35);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
-            // 
             // btn2
             // 
             this.btn2.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,15 +379,7 @@
             this.btn2.TabIndex = 1;
             this.btn2.Text = "w";
             this.btn2.UseVisualStyleBackColor = true;
-            // 
-            // btnspace
-            // 
-            this.btnspace.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnspace.Location = new System.Drawing.Point(88, 100);
-            this.btnspace.Name = "btnspace";
-            this.btnspace.Size = new System.Drawing.Size(170, 35);
-            this.btnspace.TabIndex = 33;
-            this.btnspace.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -409,6 +390,7 @@
             this.btn3.TabIndex = 2;
             this.btn3.Text = "e";
             this.btn3.UseVisualStyleBackColor = true;
+            this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
             // btnocultar
             // 
@@ -430,16 +412,7 @@
             this.btn4.TabIndex = 3;
             this.btn4.Text = "r";
             this.btn4.UseVisualStyleBackColor = true;
-            // 
-            // btnpunto
-            // 
-            this.btnpunto.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpunto.Location = new System.Drawing.Point(256, 100);
-            this.btnpunto.Name = "btnpunto";
-            this.btnpunto.Size = new System.Drawing.Size(36, 35);
-            this.btnpunto.TabIndex = 31;
-            this.btnpunto.Text = ".";
-            this.btnpunto.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -450,6 +423,7 @@
             this.btn5.TabIndex = 4;
             this.btn5.Text = "t";
             this.btn5.UseVisualStyleBackColor = true;
+            this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
             // btnnum
             // 
@@ -460,6 +434,7 @@
             this.btnnum.TabIndex = 30;
             this.btnnum.Text = "123";
             this.btnnum.UseVisualStyleBackColor = true;
+            this.btnnum.Click += new System.EventHandler(this.btnnum_Click);
             // 
             // btn6
             // 
@@ -470,16 +445,7 @@
             this.btn6.TabIndex = 5;
             this.btn6.Text = "y";
             this.btn6.UseVisualStyleBackColor = true;
-            // 
-            // btncoma
-            // 
-            this.btncoma.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncoma.Location = new System.Drawing.Point(54, 100);
-            this.btncoma.Name = "btncoma";
-            this.btncoma.Size = new System.Drawing.Size(36, 35);
-            this.btncoma.TabIndex = 29;
-            this.btncoma.Text = ",";
-            this.btncoma.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btn10
             // 
@@ -490,16 +456,7 @@
             this.btn10.TabIndex = 6;
             this.btn10.Text = "p";
             this.btn10.UseVisualStyleBackColor = true;
-            // 
-            // btnback
-            // 
-            this.btnback.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnback.Image = ((System.Drawing.Image)(resources.GetObject("btnback.Image")));
-            this.btnback.Location = new System.Drawing.Point(290, 68);
-            this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(53, 35);
-            this.btnback.TabIndex = 28;
-            this.btnback.UseVisualStyleBackColor = true;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
             // 
             // btn9
             // 
@@ -510,6 +467,7 @@
             this.btn9.TabIndex = 7;
             this.btn9.Text = "o";
             this.btn9.UseVisualStyleBackColor = true;
+            this.btn9.Click += new System.EventHandler(this.btn9_Click);
             // 
             // btn26
             // 
@@ -531,6 +489,7 @@
             this.btn8.TabIndex = 8;
             this.btn8.Text = "i";
             this.btn8.UseVisualStyleBackColor = true;
+            this.btn8.Click += new System.EventHandler(this.btn8_Click);
             // 
             // btn27
             // 
@@ -541,6 +500,7 @@
             this.btn27.TabIndex = 25;
             this.btn27.Text = "m";
             this.btn27.UseVisualStyleBackColor = true;
+            this.btn27.Click += new System.EventHandler(this.btn27_Click);
             // 
             // btn7
             // 
@@ -551,6 +511,7 @@
             this.btn7.TabIndex = 9;
             this.btn7.Text = "u";
             this.btn7.UseVisualStyleBackColor = true;
+            this.btn7.Click += new System.EventHandler(this.btn7_Click);
             // 
             // btn25
             // 
@@ -561,6 +522,7 @@
             this.btn25.TabIndex = 24;
             this.btn25.Text = "b";
             this.btn25.UseVisualStyleBackColor = true;
+            this.btn25.Click += new System.EventHandler(this.btn25_Click);
             // 
             // btn11
             // 
@@ -571,6 +533,7 @@
             this.btn11.TabIndex = 10;
             this.btn11.Text = "a";
             this.btn11.UseVisualStyleBackColor = true;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
             // 
             // btn24
             // 
@@ -581,6 +544,7 @@
             this.btn24.TabIndex = 23;
             this.btn24.Text = "v";
             this.btn24.UseVisualStyleBackColor = true;
+            this.btn24.Click += new System.EventHandler(this.btn24_Click);
             // 
             // btn12
             // 
@@ -591,6 +555,7 @@
             this.btn12.TabIndex = 11;
             this.btn12.Text = "s";
             this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
             // 
             // btn23
             // 
@@ -601,6 +566,7 @@
             this.btn23.TabIndex = 22;
             this.btn23.Text = "c";
             this.btn23.UseVisualStyleBackColor = true;
+            this.btn23.Click += new System.EventHandler(this.btn23_Click);
             // 
             // btn13
             // 
@@ -611,6 +577,7 @@
             this.btn13.TabIndex = 12;
             this.btn13.Text = "d";
             this.btn13.UseVisualStyleBackColor = true;
+            this.btn13.Click += new System.EventHandler(this.btn13_Click);
             // 
             // btn22
             // 
@@ -621,6 +588,7 @@
             this.btn22.TabIndex = 21;
             this.btn22.Text = "x";
             this.btn22.UseVisualStyleBackColor = true;
+            this.btn22.Click += new System.EventHandler(this.btn22_Click);
             // 
             // btn14
             // 
@@ -631,6 +599,7 @@
             this.btn14.TabIndex = 13;
             this.btn14.Text = "f";
             this.btn14.UseVisualStyleBackColor = true;
+            this.btn14.Click += new System.EventHandler(this.btn14_Click);
             // 
             // btn21
             // 
@@ -641,6 +610,7 @@
             this.btn21.TabIndex = 20;
             this.btn21.Text = "z";
             this.btn21.UseVisualStyleBackColor = true;
+            this.btn21.Click += new System.EventHandler(this.btn21_Click);
             // 
             // btn15
             // 
@@ -651,6 +621,7 @@
             this.btn15.TabIndex = 14;
             this.btn15.Text = "g";
             this.btn15.UseVisualStyleBackColor = true;
+            this.btn15.Click += new System.EventHandler(this.btn15_Click);
             // 
             // btn17
             // 
@@ -661,6 +632,7 @@
             this.btn17.TabIndex = 19;
             this.btn17.Text = "j";
             this.btn17.UseVisualStyleBackColor = true;
+            this.btn17.Click += new System.EventHandler(this.btn17_Click);
             // 
             // btn16
             // 
@@ -682,6 +654,7 @@
             this.btn18.TabIndex = 18;
             this.btn18.Text = "k";
             this.btn18.UseVisualStyleBackColor = true;
+            this.btn18.Click += new System.EventHandler(this.btn18_Click);
             // 
             // btn20
             // 
@@ -692,6 +665,7 @@
             this.btn20.TabIndex = 16;
             this.btn20.Text = "ñ";
             this.btn20.UseVisualStyleBackColor = true;
+            this.btn20.Click += new System.EventHandler(this.btn20_Click);
             // 
             // btn19
             // 
@@ -702,6 +676,7 @@
             this.btn19.TabIndex = 17;
             this.btn19.Text = "l";
             this.btn19.UseVisualStyleBackColor = true;
+            this.btn19.Click += new System.EventHandler(this.btn19_Click);
             // 
             // pcbvolver
             // 
@@ -715,7 +690,61 @@
             this.pcbvolver.TabStop = false;
             this.pcbvolver.Click += new System.EventHandler(this.pcbvolver_Click);
             // 
-            // FrmRegistro
+            // btnShitt
+            // 
+            this.btnShitt.BackColor = System.Drawing.Color.Silver;
+            this.btnShitt.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShitt.Image = ((System.Drawing.Image)(resources.GetObject("btnShitt.Image")));
+            this.btnShitt.Location = new System.Drawing.Point(3, 69);
+            this.btnShitt.Name = "btnShitt";
+            this.btnShitt.Size = new System.Drawing.Size(53, 35);
+            this.btnShitt.TabIndex = 49;
+            this.btnShitt.UseVisualStyleBackColor = false;
+            this.btnShitt.Click += new System.EventHandler(this.btnShitt_Click);
+            // 
+            // btnEspacio
+            // 
+            this.btnEspacio.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEspacio.Location = new System.Drawing.Point(88, 101);
+            this.btnEspacio.Name = "btnEspacio";
+            this.btnEspacio.Size = new System.Drawing.Size(170, 35);
+            this.btnEspacio.TabIndex = 48;
+            this.btnEspacio.UseVisualStyleBackColor = true;
+            this.btnEspacio.Click += new System.EventHandler(this.btnEspacio_Click);
+            // 
+            // btnretroceso
+            // 
+            this.btnretroceso.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnretroceso.Image = ((System.Drawing.Image)(resources.GetObject("btnretroceso.Image")));
+            this.btnretroceso.Location = new System.Drawing.Point(290, 69);
+            this.btnretroceso.Name = "btnretroceso";
+            this.btnretroceso.Size = new System.Drawing.Size(53, 35);
+            this.btnretroceso.TabIndex = 47;
+            this.btnretroceso.UseVisualStyleBackColor = true;
+            // 
+            // btnpunto
+            // 
+            this.btnpunto.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpunto.Location = new System.Drawing.Point(256, 101);
+            this.btnpunto.Name = "btnpunto";
+            this.btnpunto.Size = new System.Drawing.Size(36, 35);
+            this.btnpunto.TabIndex = 46;
+            this.btnpunto.Text = "\'";
+            this.btnpunto.UseVisualStyleBackColor = true;
+            this.btnpunto.Click += new System.EventHandler(this.btnpunto_Click);
+            // 
+            // btncoma
+            // 
+            this.btncoma.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncoma.Location = new System.Drawing.Point(54, 101);
+            this.btncoma.Name = "btncoma";
+            this.btncoma.Size = new System.Drawing.Size(36, 35);
+            this.btncoma.TabIndex = 45;
+            this.btncoma.Text = "@";
+            this.btncoma.UseVisualStyleBackColor = true;
+            this.btncoma.Click += new System.EventHandler(this.btncoma_Click);
+            // 
+            // Frm_RegistroTrabajador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -727,11 +756,12 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmRegistro";
+            this.Name = "Frm_RegistroTrabajador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmRegistro";
             this.TransparencyKey = System.Drawing.SystemColors.Control;
             this.Load += new System.EventHandler(this.FrmRegistro_Load);
+            this.Click += new System.EventHandler(this.Frm_RegistroTrabajador_Click);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).EndInit();
@@ -765,19 +795,14 @@
         private System.Windows.Forms.PictureBox pcbvolver;
         private System.Windows.Forms.Panel pteclado;
         private System.Windows.Forms.Button btn1;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btn2;
-        private System.Windows.Forms.Button btnspace;
         private System.Windows.Forms.Button btn3;
         private System.Windows.Forms.Button btnocultar;
         private System.Windows.Forms.Button btn4;
-        private System.Windows.Forms.Button btnpunto;
         private System.Windows.Forms.Button btn5;
         private System.Windows.Forms.Button btnnum;
         private System.Windows.Forms.Button btn6;
-        private System.Windows.Forms.Button btncoma;
         private System.Windows.Forms.Button btn10;
-        private System.Windows.Forms.Button btnback;
         private System.Windows.Forms.Button btn9;
         private System.Windows.Forms.Button btn26;
         private System.Windows.Forms.Button btn8;
@@ -798,5 +823,10 @@
         private System.Windows.Forms.Button btn18;
         private System.Windows.Forms.Button btn20;
         private System.Windows.Forms.Button btn19;
+        private System.Windows.Forms.Button btnShitt;
+        private System.Windows.Forms.Button btnEspacio;
+        private System.Windows.Forms.Button btnretroceso;
+        private System.Windows.Forms.Button btnpunto;
+        private System.Windows.Forms.Button btncoma;
     }
 }

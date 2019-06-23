@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnShitt.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAPdJREFUSEvd
         lTELglAURv0TDTXqExF9UWNrbdFvb0if1VgUUouLe90LXxFyE+02RAcORN97Rygo72eYrs3A5sHe5mbL
@@ -128,7 +128,7 @@
         AetPcZ+N4+EAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="btnocultar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnEnter.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAQ1JREFUSEtj
         GFIgdBUDs+4lOUGV2yp8UCHaA52rysU6V1W+6VxR+Q/FD3QvKRtDpWkD1G+o8wIt+o1kKQxvhiqhDTC4
@@ -138,7 +138,7 @@
         Sr3xUCnaA2APgh1oeTNNg3eYAQYGALQot1uLDCreAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnback.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnretroceso.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAQVJREFUSEtj
         GAWjYGQC4zNK/NpXtXmgXPoAvWsqFjpXVT7oXFY5DhWiPdC+ouyoc0XlKxD/B+I3UGHaAqAPHZAspY/F

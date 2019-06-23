@@ -87,6 +87,31 @@ namespace PrjReconocimientoF.Formularios
             }
 
         }
+        private void CALLBUTTON(Button BTN)
+        {
+            if (nombre == true)
+            {
+                if (btnShitt.FlatStyle == FlatStyle.Flat)
+                {
+                    txt_nombre.Text = txt_nombre.Text + BTN.Text;
+                    btnShitt.PerformClick();
+                }
+                txt_nombre.Text = txt_nombre.Text + BTN.Text;
+                txt_nombre.Focus();
+            }
+            else if (codigo == true)
+            {
+                if (btnnum.FlatStyle == FlatStyle.Flat)
+                {
+                    txt_codigo.Text = txt_codigo.Text + BTN.Text;
+                    btnnum.PerformClick();
+                }
+                txt_codigo.Text = txt_codigo.Text + BTN.Text;
+                txt_codigo.Focus();
+            }
+        }
+        public static bool nombre;
+        public static bool codigo;
 
         int opcion = 0;
 
@@ -222,113 +247,21 @@ namespace PrjReconocimientoF.Formularios
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (opcion == 1)
-            {
-                if (txt_nombre.Text == "")
-                {
-                    txt_nombre.Text = btn1.Text;
-                }
-                else
-                {
-                    string nom;
-                    nom = txt_nombre.Text;
-                    txt_nombre.Text = nom + btn1.Text;
-                }
-            }
-            else if (opcion == 2)
-            {
-                if (txt_codigo.Text == "")
-                {
-                    txt_codigo.Text = btn1.Text;
-                }
-                else
-                {
-                    string nom;
-                    nom = txt_codigo.Text;
-                    txt_codigo.Text = nom + btn1.Text;
-                }
-            }
+            CALLBUTTON(btn1);
         }
 
         private void txt_codigo_TextChanged(object sender, EventArgs e)
         {
-            opcion = 2;
-            pteclado.Visible = true;
+            //opcion = 2;
+            //pteclado.Visible = true;
         }
 
         private void txt_nombre_TextChanged(object sender, EventArgs e)
         {
-            opcion = 1;
-            pteclado.Visible = true;
+            //opcion = 1;
+            //pteclado.Visible = true;
         }
-
-       
-
-        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
-        {
-
-            if (checkBox1.Checked == true)
-            {
-                btn1.Text = "Q";
-                btn2.Text = "W";
-                btn3.Text = "E";
-                btn4.Text = "R";
-                btn5.Text = "T";
-                btn6.Text = "Y";
-                btn7.Text = "U";
-                btn8.Text = "I";
-                btn9.Text = "O";
-                btn10.Text = "P";
-                btn11.Text = "A";
-                btn12.Text = "S";
-                btn13.Text = "D";
-                btn14.Text = "F";
-                btn15.Text = "G";
-                btn16.Text = "H";
-                btn17.Text = "J";
-                btn18.Text = "K";
-                btn19.Text = "L";
-                btn20.Text = "Ñ";
-                btn21.Text = "Z";
-                btn22.Text = "X";
-                btn23.Text = "C";
-                btn24.Text = "V";
-                btn25.Text = "B";
-                btn26.Text = "N";
-                btn27.Text = "M";
-            }
-            else
-            {
-                btn1.Text = "q";
-                btn2.Text = "w";
-                btn3.Text = "e";
-                btn4.Text = "r";
-                btn5.Text = "t";
-                btn6.Text = "y";
-                btn7.Text = "u";
-                btn8.Text = "i";
-                btn9.Text = "o";
-                btn10.Text = "p";
-                btn11.Text = "a";
-                btn12.Text = "s";
-                btn13.Text = "d";
-                btn14.Text = "f";
-                btn15.Text = "g";
-                btn16.Text = "h";
-                btn17.Text = "j";
-                btn18.Text = "k";
-                btn19.Text = "l";
-                btn20.Text = "ñ";
-                btn21.Text = "z";
-                btn22.Text = "x";
-                btn23.Text = "c";
-                btn24.Text = "v";
-                btn25.Text = "b";
-                btn26.Text = "n";
-                btn27.Text = "m";
-            }
-        }
-
+               
         private void btnocultar_Click(object sender, EventArgs e)
         {
             pteclado.Visible = false;
@@ -336,11 +269,12 @@ namespace PrjReconocimientoF.Formularios
 
         private void btn26_Click(object sender, EventArgs e)
         {
-
+            CALLBUTTON(btn26);
         }
 
         private void BtnDesconectar_Click(object sender, EventArgs e)
         {
+            pteclado.Visible = false;
             try
             {
                 Application.Idle -= new EventHandler(FrameGrabber);//Detenemos el evento de captura
@@ -358,11 +292,334 @@ namespace PrjReconocimientoF.Formularios
 
         private void btn16_Click(object sender, EventArgs e)
         {
+            CALLBUTTON(btn16);
+        }
 
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn2);
+        }
+
+        private void btn3_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn3);
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn4);
+        }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn5);
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn6);
+        }
+
+        private void btn7_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn7);
+        }
+
+        private void btn8_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn8);
+        }
+
+        private void btn9_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn9);
+        }
+
+        private void btn10_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn10);
+        }
+
+        private void btn11_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn11);
+        }
+
+        private void btn12_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn12);
+        }
+
+        private void btn13_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn13);
+        }
+
+        private void btn14_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn14);
+        }
+
+        private void btn15_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn15);
+        }
+
+        private void btn17_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn17);
+        }
+
+        private void btn18_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn18);
+        }
+
+        private void btn19_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn19);
+        }
+
+        private void btn20_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn20);
+        }
+
+        private void btn21_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn21);
+        }
+
+        private void btn22_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn22);
+        }
+
+        private void btn23_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn23);
+        }
+
+        private void btn24_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn24);
+        }
+
+        private void btn25_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn25);
+        }
+
+        private void btn27_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btn27);
+        }
+
+        private void btncoma_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btncoma);
+        }
+
+        private void btnpunto_Click(object sender, EventArgs e)
+        {
+            CALLBUTTON(btnpunto);
+        }
+
+        private void btnEspacio_Click(object sender, EventArgs e)
+        {
+            if (nombre == true)
+            {
+                txt_nombre.Text = txt_nombre.Text + " ";
+            }
+            else if (codigo == true)
+            {
+                txt_codigo.Text = txt_codigo.Text + " ";
+            }
+        }
+
+        private void btnShitt_Click(object sender, EventArgs e)
+        {
+            
+            if ((btnShitt.BackColor == Color.LightGreen))
+            {
+                btnShitt.BackColor = Color.Silver;
+
+                btn1.Text = "q";
+                btn2.Text = "w";
+                btn3.Text = "e";
+                btn4.Text = "r";
+                btn5.Text = "t";
+                btn6.Text = "y";
+                btn7.Text = "u";
+                btn8.Text = "i";
+                btn9.Text = "o";
+                btn10.Text = "p";
+
+                btn11.Text = "a";
+                btn12.Text = "s";
+                btn13.Text = "d";
+                btn14.Text = "f";
+                btn15.Text = "g";
+                btn16.Text = "h";
+                btn17.Text = "j";
+                btn18.Text = "k";
+                btn19.Text = "l";
+                btnpunto.Text = ".";
+                btncoma.Text = "@";
+
+                btn20.Text = "ñ";
+                btn21.Text = "z";
+                btn22.Text = "x";
+                btn23.Text = "c";
+                btn24.Text = "v";
+                btn25.Text = "b";
+                btn26.Text = "n";
+                btn27.Text = "m";
+            }
+            else
+            {
+                btnShitt.BackColor = Color.LightGreen;
+                btnnum.BackColor = Color.Silver;
+                btn1.Text = "Q";
+                btn2.Text = "W";
+                btn3.Text = "E";
+                btn4.Text = "R";
+                btn5.Text = "T";
+                btn6.Text = "Y";
+                btn7.Text = "U";
+                btn8.Text = "I";
+                btn9.Text = "O";
+                btn10.Text = "P";
+
+                btn11.Text = "A";
+                btn12.Text = "S";
+                btn13.Text = "D";
+                btn14.Text = "F";
+                btn15.Text = "G";
+                btn16.Text = "H";
+                btn17.Text = "J";
+                btn18.Text = "K";
+                btn19.Text = "L";
+                btnpunto.Text = "'";
+                btncoma.Text = ",";
+
+                btn20.Text = "Ñ";
+                btn21.Text = "Z";
+                btn22.Text = "X";
+                btn23.Text = "C";
+                btn24.Text = "V";
+                btn25.Text = "B";
+                btn26.Text = "N";
+                btn27.Text = "M";
+            }
+        }
+
+        private void btnnum_Click(object sender, EventArgs e)
+        {
+            
+            if ((btnnum.BackColor == Color.LightGreen))
+            {
+                btnnum.BackColor = Color.Silver;
+
+                btn1.Text = "q";
+                btn2.Text = "w";
+                btn3.Text = "e";
+                btn4.Text = "r";
+                btn5.Text = "t";
+                btn6.Text = "y";
+                btn7.Text = "u";
+                btn8.Text = "i";
+                btn9.Text = "o";
+                btn10.Text = "p";
+
+                btn11.Text = "a";
+                btn12.Text = "s";
+                btn13.Text = "d";
+                btn14.Text = "f";
+                btn15.Text = "g";
+                btn16.Text = "h";
+                btn17.Text = "j";
+                btn18.Text = "k";
+                btn19.Text = "l";
+                btnpunto.Text = ".";
+                btncoma.Text = "@";
+
+                btn20.Text = "ñ";
+                btn21.Text = "z";
+                btn22.Text = "x";
+                btn23.Text = "c";
+                btn24.Text = "v";
+                btn25.Text = "b";
+                btn26.Text = "n";
+                btn27.Text = "m";
+            }
+            else
+            {
+                btnnum.BackColor = Color.LightGreen;
+                btnShitt.BackColor = Color.Silver;
+                
+
+                btn1.Text = "1";
+                btn2.Text = "2";
+                btn3.Text = "3";
+                btn4.Text = "4";
+                btn5.Text = "5";
+                btn6.Text = "6";
+                btn7.Text = "7";
+                btn8.Text = "8";
+                btn9.Text = "9";
+                btn10.Text = "10";
+
+                btn11.Text = "!";
+                btn12.Text = "#";
+                btn13.Text = "$";
+                btn14.Text = "%";
+                btn15.Text = "&&";
+                btn16.Text = "/";
+                btn17.Text = "(";
+                btn18.Text = ")";
+                btn19.Text = "=";
+                btnpunto.Text = ".";
+                btncoma.Text = ",";
+
+                btn20.Text = "-";
+                btn21.Text = "+";
+                btn22.Text = "?";
+                btn23.Text = ":";
+                btn24.Text = ";";
+                btn25.Text = "\\";
+                btn26.Text = "<";
+                btn27.Text = ">";
+            }
+        }
+
+        private void txt_nombre_Click(object sender, EventArgs e)
+        {
+            nombre = true;
+            codigo = false;
+            pteclado.Visible = true;
+        }
+
+        private void txt_codigo_Click(object sender, EventArgs e)
+        {
+            codigo = true;
+            nombre = false;
+            pteclado.Visible = true;
+        }
+
+        private void Frm_RegistroTrabajador_Click(object sender, EventArgs e)
+        {
+            pteclado.Visible = false;
+        }
+
+        private void panel1_Click(object sender, EventArgs e)
+        {
+            pteclado.Visible = false;
         }
 
         private void BtnDetectar_Click(object sender, EventArgs e)
         {
+            pteclado.Visible = false;
             try
             {
                 //Inicia la Captura            
