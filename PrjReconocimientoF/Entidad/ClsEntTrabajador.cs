@@ -8,7 +8,7 @@ namespace PrjReconocimientoF.Entidad
 {
     class ClsEntTrabajador
     {
-        public string codigo { get; set; }
+        public string dni { get; set; }
         public string nombres { get; set; }
         public string fecha { get; set; }
         public string hentrada { get; set; }
