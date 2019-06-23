@@ -18,7 +18,7 @@ namespace PrjReconocimientoF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistro());
+            Application.Run(new Frm_RegistroTrabajador());
         }
     }
 }

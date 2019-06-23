@@ -94,31 +94,37 @@
     <Compile Include="Entidad\ClsEntRostro.cs" />
     <Compile Include="Entidad\ClsEntTrabajador.cs" />
     <Compile Include="Entidad\ClsEntUsuario.cs" />
+    <Compile Include="Formularios\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="Negocios\DBCon.cs" />
     <Compile Include="Entidad\ClsEntAsistencia.cs" />
-    <Compile Include="Formularios\FrmMovil.cs">
+    <Compile Include="Formularios\Frm_Movil.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmMovil.Designer.cs">
-      <DependentUpon>FrmMovil.cs</DependentUpon>
+    <Compile Include="Formularios\Frm_Movil.Designer.cs">
+      <DependentUpon>Frm_Movil.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmReconocimientoFacial.cs">
+    <Compile Include="Formularios\Frm_AsitenciaTrabajador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmReconocimientoFacial.Designer.cs">
-      <DependentUpon>FrmReconocimientoFacial.cs</DependentUpon>
+    <Compile Include="Formularios\Frm_AsitenciaTrabajador.Designer.cs">
+      <DependentUpon>Frm_AsitenciaTrabajador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmRegistro.cs">
+    <Compile Include="Formularios\Frm_RegistroTrabajador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmRegistro.Designer.cs">
-      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    <Compile Include="Formularios\Frm_RegistroTrabajador.Designer.cs">
+      <DependentUpon>Frm_RegistroTrabajador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\FrmPrincipal.cs">
+    <Compile Include="Formularios\Frm_Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FrmPrincipal.Designer.cs">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <Compile Include="Formularios\Frm_Principal.Designer.cs">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmRegistroface.cs">
       <SubType>Form</SubType>
@@ -136,17 +142,20 @@
     <Compile Include="Reportes\FrmReportes01.Designer.cs">
       <DependentUpon>FrmReportes01.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Formularios\FrmMovil.resx">
-      <DependentUpon>FrmMovil.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmReconocimientoFacial.resx">
-      <DependentUpon>FrmReconocimientoFacial.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frm_Movil.resx">
+      <DependentUpon>Frm_Movil.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmRegistro.resx">
-      <DependentUpon>FrmRegistro.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frm_AsitenciaTrabajador.resx">
+      <DependentUpon>Frm_AsitenciaTrabajador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\FrmPrincipal.resx">
-      <DependentUpon>FrmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Frm_RegistroTrabajador.resx">
+      <DependentUpon>Frm_RegistroTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmRegistroface.resx">
       <DependentUpon>FrmRegistroface.cs</DependentUpon>
@@ -176,6 +185,11 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\icons8_checkmark_26px.png" />
+    <Content Include="Imagenes\icons8_gender_neutral_user_32px.png" />
+    <Content Include="Imagenes\icons8_ok_48px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
