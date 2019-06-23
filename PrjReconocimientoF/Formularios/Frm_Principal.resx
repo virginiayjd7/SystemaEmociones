@@ -117,13 +117,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnDesconectar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAJpSURBVEhL3VXLahRBFG3fL1wr0cVoVzmY7h4Xs3I34EI3gqBBQdc+iAYj/oWI+Ae6EELQb3Ch
+        UYmDZOguE+IjfxBBxWgE4zm3b2dq2s5MFFzogUP6njr3dqfq1p3g/4Z5Y7bFqbkQZ+GjODPvwEUlnx8m
+        zpynR+2/h8iZM1EWLqDQSl868z7K7GlNG4yRyWBT7MK7XpGZ4lktQdVakpk7zFXL2ogyc1uSnPmSOHsp
+        WAk2FEXUsvoCWUvNFTwviebsLbVUI3kdntLkJSS2qDXbzS2q/fKC1uPWZsYNd/AY4q/gD3zgSTGVEblo
+        KwxvmQjTaK7V9iJ+So0UI1DEcWafxOmBPaK58Jrq8/woMfrAgZ7TpA7+9Y3ywtQ87xarPANyil45u9Sk
+        1NBdI2rtAns+IQnYU4lTe9krIhQjUNYTF16kjr9XGWMHHojRBxbmudjo1OuM0RUvigIFxQiUdXCKOlp7
+        WONZMfqA+ImLR5/t36HxBzWvUoxAWQcXqTfbQzs1/ihGHxA/c7HRaezy43VSCtbn6rv9uAcQZYuw94fz
+        2E6reTDRDMwZdiaS2IVzjHvQPWQ7xpit2lOkH9EQmjPOuPKQizbF4WZsORl0aNmeQhWE/xXblJcO8axo
+        VW1aumjXqR2ZObSPBahV0pk29n2I3jgNb6pefdEIb1Qs4yXHqeUXTu7ES5DjALTT7P2iUOTCE9C/g2uP
+        igIw5MMuM9/wPNpvQua3147Buyw5g4YdIUneuOaZ4EXjvES1hdp2kt2Cfb6Bdef51jeuC/y1Hxwf7CTt
+        rvsgv5Zzn3RJZu/hYM/+8U/mP4Ig+AnQpzPD6c+goQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>82</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARcAAAI2CAYAAAB6y8zaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

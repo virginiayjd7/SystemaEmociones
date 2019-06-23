@@ -94,6 +94,12 @@
     <Compile Include="Entidad\ClsEntRostro.cs" />
     <Compile Include="Entidad\ClsEntTrabajador.cs" />
     <Compile Include="Entidad\ClsEntUsuario.cs" />
+    <Compile Include="Formularios\Frm_EstadoAnimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_EstadoAnimo.Designer.cs">
+      <DependentUpon>Frm_EstadoAnimo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="Reportes\FrmReportes01.Designer.cs">
       <DependentUpon>FrmReportes01.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\Frm_EstadoAnimo.resx">
+      <DependentUpon>Frm_EstadoAnimo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Frm_Login.resx">
       <DependentUpon>Frm_Login.cs</DependentUpon>
     </EmbeddedResource>

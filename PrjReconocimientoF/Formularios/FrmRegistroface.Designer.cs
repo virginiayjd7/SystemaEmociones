@@ -109,6 +109,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(347, 562);
             this.panel1.TabIndex = 57;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // pteclado
             // 
@@ -699,7 +700,7 @@
             this.panel3.Size = new System.Drawing.Size(88, 43);
             this.panel3.TabIndex = 67;
             // 
-            // FrmTabletRegistro
+            // FrmRegistroface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -710,7 +711,7 @@
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FrmTabletRegistro";
+            this.Name = "FrmRegistroface";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTabletRegistro";
             this.TransparencyKey = System.Drawing.SystemColors.Control;

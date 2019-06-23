@@ -94,6 +94,11 @@ namespace PrjReconocimientoF.Formularios
 
         }
 
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void imageBoxFrameGrabber_Click(object sender, EventArgs e)
         {
 

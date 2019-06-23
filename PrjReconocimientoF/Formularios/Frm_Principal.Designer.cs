@@ -131,7 +131,7 @@
             this.lblNumeroDetect.AutoSize = true;
             this.lblNumeroDetect.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroDetect.ForeColor = System.Drawing.Color.Red;
-            this.lblNumeroDetect.Location = new System.Drawing.Point(328, 366);
+            this.lblNumeroDetect.Location = new System.Drawing.Point(328, 393);
             this.lblNumeroDetect.Name = "lblNumeroDetect";
             this.lblNumeroDetect.Size = new System.Drawing.Size(13, 13);
             this.lblNumeroDetect.TabIndex = 71;
@@ -140,15 +140,19 @@
             // BtnDesconectar
             // 
             this.BtnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnDesconectar.BackColor = System.Drawing.Color.Gold;
+            this.BtnDesconectar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDesconectar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDesconectar.BackgroundImage")));
+            this.BtnDesconectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.BtnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnDesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDesconectar.ForeColor = System.Drawing.Color.Black;
-            this.BtnDesconectar.Location = new System.Drawing.Point(217, 254);
+            this.BtnDesconectar.ForeColor = System.Drawing.Color.White;
+            this.BtnDesconectar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BtnDesconectar.Location = new System.Drawing.Point(208, 255);
             this.BtnDesconectar.Name = "BtnDesconectar";
-            this.BtnDesconectar.Size = new System.Drawing.Size(124, 40);
+            this.BtnDesconectar.Size = new System.Drawing.Size(124, 56);
             this.BtnDesconectar.TabIndex = 70;
             this.BtnDesconectar.Text = "Desconectar";
+            this.BtnDesconectar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BtnDesconectar.UseVisualStyleBackColor = false;
             // 
             // label5
@@ -159,7 +163,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(176, 297);
+            this.label5.Location = new System.Drawing.Point(176, 324);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 13);
             this.label5.TabIndex = 68;
@@ -173,7 +177,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(174, 366);
+            this.label2.Location = new System.Drawing.Point(174, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 66;
@@ -187,7 +191,7 @@
             this.lblNadie.BackColor = System.Drawing.Color.Transparent;
             this.lblNadie.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNadie.ForeColor = System.Drawing.Color.White;
-            this.lblNadie.Location = new System.Drawing.Point(167, 334);
+            this.lblNadie.Location = new System.Drawing.Point(167, 361);
             this.lblNadie.Name = "lblNadie";
             this.lblNadie.Size = new System.Drawing.Size(163, 13);
             this.lblNadie.TabIndex = 67;
@@ -211,7 +215,7 @@
             this.panel3.Size = new System.Drawing.Size(88, 43);
             this.panel3.TabIndex = 67;
             // 
-            // FrmPrincipal
+            // Frm_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -223,7 +227,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "FrmPrincipal";
+            this.Name = "Frm_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmTabletReconocimientoFacial";
             this.TransparencyKey = System.Drawing.SystemColors.Control;
