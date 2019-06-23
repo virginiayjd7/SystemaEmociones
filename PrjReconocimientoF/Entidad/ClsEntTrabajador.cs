@@ -11,8 +11,6 @@ namespace PrjReconocimientoF.Entidad
         public string dni { get; set; }
         public string nombres { get; set; }
         public string fecha { get; set; }
-        public string hentrada { get; set; }
-        public string hsalida { get; set; }
         public string estado { get; set; }
     }
 }
