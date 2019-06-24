@@ -47,6 +47,11 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pteclado = new System.Windows.Forms.Panel();
+            this.btnShitt = new System.Windows.Forms.Button();
+            this.btnEspacio = new System.Windows.Forms.Button();
+            this.btnretroceso = new System.Windows.Forms.Button();
+            this.btnpunto = new System.Windows.Forms.Button();
+            this.btncoma = new System.Windows.Forms.Button();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -77,11 +82,6 @@
             this.btn20 = new System.Windows.Forms.Button();
             this.btn19 = new System.Windows.Forms.Button();
             this.pcbvolver = new System.Windows.Forms.PictureBox();
-            this.btnShitt = new System.Windows.Forms.Button();
-            this.btnEspacio = new System.Windows.Forms.Button();
-            this.btnretroceso = new System.Windows.Forms.Button();
-            this.btnpunto = new System.Windows.Forms.Button();
-            this.btncoma = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
@@ -95,7 +95,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.BackColor = System.Drawing.Color.Black;
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.imageBox2);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(180, 3);
@@ -109,6 +109,7 @@
             // 
             this.imageBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.imageBox2.BackColor = System.Drawing.Color.Transparent;
             this.imageBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.imageBox2.Location = new System.Drawing.Point(6, 19);
             this.imageBox2.Name = "imageBox2";
@@ -120,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(8, 16);
@@ -187,7 +188,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.LightYellow;
             this.label2.Location = new System.Drawing.Point(18, 88);
             this.label2.Name = "label2";
@@ -198,7 +199,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.ForeColor = System.Drawing.Color.LightYellow;
             this.label1.Location = new System.Drawing.Point(14, 49);
             this.label1.Name = "label1";
@@ -209,13 +210,13 @@
             // BtnDesconectar
             // 
             this.BtnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnDesconectar.BackColor = System.Drawing.Color.Black;
+            this.BtnDesconectar.BackColor = System.Drawing.Color.Transparent;
             this.BtnDesconectar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDesconectar.BackgroundImage")));
             this.BtnDesconectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDesconectar.ForeColor = System.Drawing.Color.Transparent;
-            this.BtnDesconectar.Location = new System.Drawing.Point(88, 167);
+            this.BtnDesconectar.Location = new System.Drawing.Point(239, 167);
             this.BtnDesconectar.Name = "BtnDesconectar";
             this.BtnDesconectar.Size = new System.Drawing.Size(36, 39);
             this.BtnDesconectar.TabIndex = 52;
@@ -225,13 +226,13 @@
             // BtnDetectar
             // 
             this.BtnDetectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnDetectar.BackColor = System.Drawing.Color.Black;
+            this.BtnDetectar.BackColor = System.Drawing.Color.Transparent;
             this.BtnDetectar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDetectar.BackgroundImage")));
             this.BtnDetectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnDetectar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDetectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDetectar.ForeColor = System.Drawing.Color.Transparent;
-            this.BtnDetectar.Location = new System.Drawing.Point(37, 167);
+            this.BtnDetectar.Location = new System.Drawing.Point(281, 167);
             this.BtnDetectar.Name = "BtnDetectar";
             this.BtnDetectar.Size = new System.Drawing.Size(36, 39);
             this.BtnDetectar.TabIndex = 49;
@@ -245,8 +246,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightYellow;
-            this.label3.Location = new System.Drawing.Point(135, 176);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(4, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(154, 19);
             this.label3.TabIndex = 51;
@@ -260,7 +261,7 @@
             this.lblNumeroDetect.BackColor = System.Drawing.Color.Transparent;
             this.lblNumeroDetect.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumeroDetect.ForeColor = System.Drawing.Color.White;
-            this.lblNumeroDetect.Location = new System.Drawing.Point(295, 176);
+            this.lblNumeroDetect.Location = new System.Drawing.Point(164, 172);
             this.lblNumeroDetect.Name = "lblNumeroDetect";
             this.lblNumeroDetect.Size = new System.Drawing.Size(18, 19);
             this.lblNumeroDetect.TabIndex = 50;
@@ -288,7 +289,7 @@
             this.groupBox3.Controls.Add(this.txt_nombre);
             this.groupBox3.Controls.Add(this.txt_codigo);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox3.Location = new System.Drawing.Point(29, 243);
+            this.groupBox3.Location = new System.Drawing.Point(29, 230);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(297, 129);
             this.groupBox3.TabIndex = 55;
@@ -358,6 +359,60 @@
             this.pteclado.Name = "pteclado";
             this.pteclado.Size = new System.Drawing.Size(347, 139);
             this.pteclado.TabIndex = 65;
+            // 
+            // btnShitt
+            // 
+            this.btnShitt.BackColor = System.Drawing.Color.Silver;
+            this.btnShitt.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShitt.Image = ((System.Drawing.Image)(resources.GetObject("btnShitt.Image")));
+            this.btnShitt.Location = new System.Drawing.Point(3, 69);
+            this.btnShitt.Name = "btnShitt";
+            this.btnShitt.Size = new System.Drawing.Size(53, 35);
+            this.btnShitt.TabIndex = 49;
+            this.btnShitt.UseVisualStyleBackColor = false;
+            this.btnShitt.Click += new System.EventHandler(this.btnShitt_Click);
+            // 
+            // btnEspacio
+            // 
+            this.btnEspacio.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEspacio.Location = new System.Drawing.Point(88, 101);
+            this.btnEspacio.Name = "btnEspacio";
+            this.btnEspacio.Size = new System.Drawing.Size(170, 35);
+            this.btnEspacio.TabIndex = 48;
+            this.btnEspacio.UseVisualStyleBackColor = true;
+            this.btnEspacio.Click += new System.EventHandler(this.btnEspacio_Click);
+            // 
+            // btnretroceso
+            // 
+            this.btnretroceso.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnretroceso.Image = ((System.Drawing.Image)(resources.GetObject("btnretroceso.Image")));
+            this.btnretroceso.Location = new System.Drawing.Point(290, 69);
+            this.btnretroceso.Name = "btnretroceso";
+            this.btnretroceso.Size = new System.Drawing.Size(53, 35);
+            this.btnretroceso.TabIndex = 47;
+            this.btnretroceso.UseVisualStyleBackColor = true;
+            // 
+            // btnpunto
+            // 
+            this.btnpunto.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnpunto.Location = new System.Drawing.Point(256, 101);
+            this.btnpunto.Name = "btnpunto";
+            this.btnpunto.Size = new System.Drawing.Size(36, 35);
+            this.btnpunto.TabIndex = 46;
+            this.btnpunto.Text = "\'";
+            this.btnpunto.UseVisualStyleBackColor = true;
+            this.btnpunto.Click += new System.EventHandler(this.btnpunto_Click);
+            // 
+            // btncoma
+            // 
+            this.btncoma.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncoma.Location = new System.Drawing.Point(54, 101);
+            this.btncoma.Name = "btncoma";
+            this.btncoma.Size = new System.Drawing.Size(36, 35);
+            this.btncoma.TabIndex = 45;
+            this.btncoma.Text = "@";
+            this.btncoma.UseVisualStyleBackColor = true;
+            this.btncoma.Click += new System.EventHandler(this.btncoma_Click);
             // 
             // btn1
             // 
@@ -689,60 +744,6 @@
             this.pcbvolver.TabIndex = 64;
             this.pcbvolver.TabStop = false;
             this.pcbvolver.Click += new System.EventHandler(this.pcbvolver_Click);
-            // 
-            // btnShitt
-            // 
-            this.btnShitt.BackColor = System.Drawing.Color.Silver;
-            this.btnShitt.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShitt.Image = ((System.Drawing.Image)(resources.GetObject("btnShitt.Image")));
-            this.btnShitt.Location = new System.Drawing.Point(3, 69);
-            this.btnShitt.Name = "btnShitt";
-            this.btnShitt.Size = new System.Drawing.Size(53, 35);
-            this.btnShitt.TabIndex = 49;
-            this.btnShitt.UseVisualStyleBackColor = false;
-            this.btnShitt.Click += new System.EventHandler(this.btnShitt_Click);
-            // 
-            // btnEspacio
-            // 
-            this.btnEspacio.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEspacio.Location = new System.Drawing.Point(88, 101);
-            this.btnEspacio.Name = "btnEspacio";
-            this.btnEspacio.Size = new System.Drawing.Size(170, 35);
-            this.btnEspacio.TabIndex = 48;
-            this.btnEspacio.UseVisualStyleBackColor = true;
-            this.btnEspacio.Click += new System.EventHandler(this.btnEspacio_Click);
-            // 
-            // btnretroceso
-            // 
-            this.btnretroceso.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnretroceso.Image = ((System.Drawing.Image)(resources.GetObject("btnretroceso.Image")));
-            this.btnretroceso.Location = new System.Drawing.Point(290, 69);
-            this.btnretroceso.Name = "btnretroceso";
-            this.btnretroceso.Size = new System.Drawing.Size(53, 35);
-            this.btnretroceso.TabIndex = 47;
-            this.btnretroceso.UseVisualStyleBackColor = true;
-            // 
-            // btnpunto
-            // 
-            this.btnpunto.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnpunto.Location = new System.Drawing.Point(256, 101);
-            this.btnpunto.Name = "btnpunto";
-            this.btnpunto.Size = new System.Drawing.Size(36, 35);
-            this.btnpunto.TabIndex = 46;
-            this.btnpunto.Text = "\'";
-            this.btnpunto.UseVisualStyleBackColor = true;
-            this.btnpunto.Click += new System.EventHandler(this.btnpunto_Click);
-            // 
-            // btncoma
-            // 
-            this.btncoma.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncoma.Location = new System.Drawing.Point(54, 101);
-            this.btncoma.Name = "btncoma";
-            this.btncoma.Size = new System.Drawing.Size(36, 35);
-            this.btncoma.TabIndex = 45;
-            this.btncoma.Text = "@";
-            this.btncoma.UseVisualStyleBackColor = true;
-            this.btncoma.Click += new System.EventHandler(this.btncoma_Click);
             // 
             // Frm_RegistroTrabajador
             // 

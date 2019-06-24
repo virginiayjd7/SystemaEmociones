@@ -32,11 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Login));
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
-            this.BtnDesconectar = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label5 = new System.Windows.Forms.Label();
             this.lblNadie = new System.Windows.Forms.Label();
+            this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
+            this.BtnDesconectar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.SuspendLayout();
@@ -57,50 +56,11 @@
             this.panel1.Controls.Add(this.lblNadie);
             this.panel1.Controls.Add(this.imageBoxFrameGrabber);
             this.panel1.Controls.Add(this.BtnDesconectar);
-            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(12, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(367, 559);
             this.panel1.TabIndex = 68;
-            // 
-            // imageBoxFrameGrabber
-            // 
-            this.imageBoxFrameGrabber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.imageBoxFrameGrabber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.imageBoxFrameGrabber.Location = new System.Drawing.Point(13, 36);
-            this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
-            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(319, 213);
-            this.imageBoxFrameGrabber.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imageBoxFrameGrabber.TabIndex = 73;
-            this.imageBoxFrameGrabber.TabStop = false;
-            this.imageBoxFrameGrabber.WaitOnLoad = true;
-            // 
-            // BtnDesconectar
-            // 
-            this.BtnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnDesconectar.BackColor = System.Drawing.Color.Gold;
-            this.BtnDesconectar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDesconectar.BackgroundImage")));
-            this.BtnDesconectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BtnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDesconectar.ForeColor = System.Drawing.Color.Black;
-            this.BtnDesconectar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnDesconectar.Location = new System.Drawing.Point(117, 301);
-            this.BtnDesconectar.Name = "BtnDesconectar";
-            this.BtnDesconectar.Size = new System.Drawing.Size(99, 30);
-            this.BtnDesconectar.TabIndex = 70;
-            this.BtnDesconectar.Text = "Ingresar";
-            this.BtnDesconectar.UseVisualStyleBackColor = false;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(365, 24);
-            this.menuStrip1.TabIndex = 64;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // label5
             // 
@@ -129,6 +89,38 @@
             this.lblNadie.TabIndex = 74;
             this.lblNadie.Text = "__________________________";
             // 
+            // imageBoxFrameGrabber
+            // 
+            this.imageBoxFrameGrabber.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.imageBoxFrameGrabber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.imageBoxFrameGrabber.Location = new System.Drawing.Point(13, 36);
+            this.imageBoxFrameGrabber.Name = "imageBoxFrameGrabber";
+            this.imageBoxFrameGrabber.Size = new System.Drawing.Size(319, 213);
+            this.imageBoxFrameGrabber.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageBoxFrameGrabber.TabIndex = 73;
+            this.imageBoxFrameGrabber.TabStop = false;
+            this.imageBoxFrameGrabber.WaitOnLoad = true;
+            // 
+            // BtnDesconectar
+            // 
+            this.BtnDesconectar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnDesconectar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnDesconectar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnDesconectar.BackgroundImage")));
+            this.BtnDesconectar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtnDesconectar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDesconectar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDesconectar.ForeColor = System.Drawing.Color.White;
+            this.BtnDesconectar.Location = new System.Drawing.Point(142, 305);
+            this.BtnDesconectar.Name = "BtnDesconectar";
+            this.BtnDesconectar.Size = new System.Drawing.Size(99, 52);
+            this.BtnDesconectar.TabIndex = 70;
+            this.BtnDesconectar.Text = "Ingresar";
+            this.BtnDesconectar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BtnDesconectar.UseVisualStyleBackColor = false;
+            this.BtnDesconectar.Click += new System.EventHandler(this.BtnDesconectar_Click);
+            // 
             // Frm_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,7 +148,6 @@
         private System.Windows.Forms.Panel panel1;
         private Emgu.CV.UI.ImageBox imageBoxFrameGrabber;
         private System.Windows.Forms.Button BtnDesconectar;
-        private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblNadie;
     }

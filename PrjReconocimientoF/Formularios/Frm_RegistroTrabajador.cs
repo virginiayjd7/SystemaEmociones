@@ -113,7 +113,7 @@ namespace PrjReconocimientoF.Formularios
         public static bool nombre;
         public static bool codigo;
 
-        int opcion = 0;
+        //int opcion = 0;
 
         private void BtnLimpiar_Click(object sender, EventArgs e)
         {

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.OleDb;
 using System.Data;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace PrjReconocimientoF.Negocios
 {
@@ -22,6 +23,11 @@ namespace PrjReconocimientoF.Negocios
         public static void Desconectar()
         {
             Conex.Close();
+        }
+
+        internal MySqlConnection conecctar()
+        {
+            throw new NotImplementedException();
         }
     }
 }

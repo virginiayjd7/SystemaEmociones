@@ -118,35 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="BtnDesconectar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <metadata name="FechaHora.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

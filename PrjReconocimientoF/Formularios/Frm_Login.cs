@@ -51,7 +51,12 @@ namespace PrjReconocimientoF.Formularios
             Reconocer();
         }
 
-        int cont = 0;
+        private void BtnDesconectar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //int cont = 0;
         public Frm_Login()
         {
             InitializeComponent();

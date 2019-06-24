@@ -117,24 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BtnDesconectar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABGdBTUEAALGPC/xhBQAAAVpJREFUSEvt
-        VLtKA1EU3Fhc98UuWvgBVpYWgWhnJ9YBLf0C/8DCTqwFGxvzAaKCqK0/IKhVekWwFQtRE+dwJ2E9rMka
-        j2KRgWF3z5wzk3vDvcEY/wGTYRjux3G8Je++9AuIomgb7AoReOucm6NkB5gvgG+9ICFW1qJshhjG7WII
-        2EmSZJm6DWC6p0KEu5RtgO1ZgWlHhbRF8h0GyPN8CqZ3KkT+p0W22ACrOVAhwh3KNoBhUwUIbyBVPz8Y
-        aOAcnOHZZOkTsiybhnZP8x5fwQZbhgMBSxh45vA7vtcp9YH6EfU+eRtUB4bKfuka5a+27BqS8x0VgaFD
-        ZSKUsNU0TWfwfCzUhS84mPMc/xawW+G5MhNK2JWqyZ22ybmR4GByrE1LeIneCT8yOoaFPWE1s+z9MQaF
-        bbDHDBJ2UgzBSi5Qr3nZFvCPThn0YLllZajhUNblIuX3GH+FIPgA3BeGXVelfjoAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAFVSURBVEhL3ZU9TgMxEIWNEHCHtctItpUyx6AJP0IU3IOWggIKkHIEClAUiZZy7QPQUpDwJ6ih
+        AQnREJ7DRLuY2VWsJAU86ZOjnZk30XrWFv9bjYvGinJ6R3pzDm6lMy9Yn7EOVG7OZK63WpetJUpPk3R6
+        E0b3YFiHcuYOzdapbAL1xGLmTYczq+FTeX0ohmKBXKqFV3DEGExGbo7JhlfmbJstTEB5u0Z2P9XsNZel
+        szdcUSJP7Mbj328zyZVkTh9wzwPY9A2yLYSp6XLJHMH8u6Yi7s3pyLQsBAZxIgfGco9KKhtgUK4ppRAC
+        r78SI8rmyYLBW2wYo5zdpfR0waAfG3KUm3Bxok8phVI2edyEiwXYTU4d09CEex5gx3R2H5p+rDxhZ3FU
+        yNyukh2vqQ47Z/fJpkbzPq7Hmt+FU1K4MkfT5c2J8uYKhu/4/YH1Yeor849IiC+cZFolOiV3vwAAAABJ
+        RU5ErkJggg==
 </value>
   </data>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARcAAAI2CAYAAAB6y8zaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
