@@ -14,6 +14,8 @@ using Emgu.CV.CvEnum;
 using System.Data.OleDb;
 using System.Runtime.InteropServices;
 using Reconocimiento_facial;
+using AForge.Video;
+using AForge.Video.DirectShow;
 
 namespace PrjReconocimientoF.Formularios
 {
@@ -39,6 +41,8 @@ namespace PrjReconocimientoF.Formularios
         public string[] Labels;
         DBCon dbc = new DBCon();
         int con = 0, ini = 0;
+        //VARIABLE PARA LISTA DE DISPOSITIVOS
+        private FilterInfoCollection dispositivosDeVideo;
 
         //DECLARANDO TODAS LAS VARIABLES, vectores y  haarcascades
         Image<Bgr, Byte> currentFrame;
@@ -240,7 +244,7 @@ namespace PrjReconocimientoF.Formularios
 
         private void pcbvolver_Click(object sender, EventArgs e)
         {
-            Frm_Movil frm = new Frm_Movil();
+            Frm_Principal frm = new Frm_Principal();
             frm.Show();
             this.Hide();
         }
@@ -623,7 +627,7 @@ namespace PrjReconocimientoF.Formularios
             try
             {
                 //Inicia la Captura            
-                grabber = new Capture();
+                grabber = new Capture(cmbCamara.SelectedIndex);
                 grabber.QueryFrame();
 
                 //Inicia el evento FrameGraber
@@ -691,6 +695,12 @@ namespace PrjReconocimientoF.Formularios
 
         private void FrmRegistro_Load(object sender, EventArgs e)
         {
+            dispositivosDeVideo = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo dispositivo in dispositivosDeVideo)
+            {
+                cmbCamara.Items.Add(dispositivo.Name);
+            }
+            cmbCamara.SelectedIndex = 0;
 
             pteclado.Visible = false;
             #region[Metodo deredimension de formulario sin borde]

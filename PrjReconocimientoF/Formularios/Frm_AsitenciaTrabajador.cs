@@ -108,7 +108,7 @@ namespace PrjReconocimientoF.Formularios
             try
             {
                 //Iniciar el dispositivo de captura
-                grabber = new Capture();
+                grabber = new Capture(1);
                 grabber.QueryFrame();
                 //Iniciar el evento FrameGraber
                 Application.Idle += new EventHandler(FrameGrabber);
@@ -327,6 +327,13 @@ namespace PrjReconocimientoF.Formularios
             sizeGripRectangle = new Rectangle(
                        this.Width - GRIP_SIZE,
                        this.Height - GRIP_SIZE, GRIP_SIZE, GRIP_SIZE);
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            Frm_Principal frm = new Frm_Principal();
+            frm.Show();
+            this.Hide();
         }
 
         private bool IsInSizeGrip(Point tmp)

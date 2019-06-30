@@ -37,14 +37,14 @@
             this.lblNumeroDetect = new System.Windows.Forms.Label();
             this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dgvasistencia = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblfecha = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.lblhora = new System.Windows.Forms.Label();
+            this.dgvasistencia = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.FechaHora = new System.Windows.Forms.Timer(this.components);
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvasistencia)).BeginInit();
@@ -156,6 +156,19 @@
             this.panel1.Size = new System.Drawing.Size(341, 586);
             this.panel1.TabIndex = 64;
             // 
+            // lblfecha
+            // 
+            this.lblfecha.AutoSize = true;
+            this.lblfecha.BackColor = System.Drawing.Color.Transparent;
+            this.lblfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblfecha.ForeColor = System.Drawing.Color.White;
+            this.lblfecha.Location = new System.Drawing.Point(50, 18);
+            this.lblfecha.Name = "lblfecha";
+            this.lblfecha.Size = new System.Drawing.Size(45, 16);
+            this.lblfecha.TabIndex = 1;
+            this.lblfecha.Text = "label3";
+            this.lblfecha.Click += new System.EventHandler(this.label3_Click);
+            // 
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -172,6 +185,18 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // lblhora
+            // 
+            this.lblhora.AutoSize = true;
+            this.lblhora.BackColor = System.Drawing.Color.Transparent;
+            this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhora.ForeColor = System.Drawing.Color.White;
+            this.lblhora.Location = new System.Drawing.Point(261, 18);
+            this.lblhora.Name = "lblhora";
+            this.lblhora.Size = new System.Drawing.Size(45, 16);
+            this.lblhora.TabIndex = 0;
+            this.lblhora.Text = "label1";
+            // 
             // dgvasistencia
             // 
             this.dgvasistencia.AllowUserToAddRows = false;
@@ -182,6 +207,18 @@
             this.dgvasistencia.ReadOnly = true;
             this.dgvasistencia.Size = new System.Drawing.Size(323, 156);
             this.dgvasistencia.TabIndex = 65;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(250, 291);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 15);
+            this.label1.TabIndex = 64;
+            this.label1.Text = "Registrarse";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
@@ -199,31 +236,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblfecha
-            // 
-            this.lblfecha.AutoSize = true;
-            this.lblfecha.BackColor = System.Drawing.Color.Transparent;
-            this.lblfecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblfecha.ForeColor = System.Drawing.Color.White;
-            this.lblfecha.Location = new System.Drawing.Point(50, 18);
-            this.lblfecha.Name = "lblfecha";
-            this.lblfecha.Size = new System.Drawing.Size(45, 16);
-            this.lblfecha.TabIndex = 1;
-            this.lblfecha.Text = "label3";
-            this.lblfecha.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // lblhora
-            // 
-            this.lblhora.AutoSize = true;
-            this.lblhora.BackColor = System.Drawing.Color.Transparent;
-            this.lblhora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblhora.ForeColor = System.Drawing.Color.White;
-            this.lblhora.Location = new System.Drawing.Point(261, 18);
-            this.lblhora.Name = "lblhora";
-            this.lblhora.Size = new System.Drawing.Size(45, 16);
-            this.lblhora.TabIndex = 0;
-            this.lblhora.Text = "label1";
-            // 
             // FechaHora
             // 
             this.FechaHora.Tick += new System.EventHandler(this.FechaHora_Tick);
@@ -236,18 +248,7 @@
             this.panel3.Size = new System.Drawing.Size(88, 43);
             this.panel3.TabIndex = 66;
             this.panel3.Click += new System.EventHandler(this.panel3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(250, 291);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 15);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "Registrarse";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // Frm_AsitenciaTrabajador
             // 

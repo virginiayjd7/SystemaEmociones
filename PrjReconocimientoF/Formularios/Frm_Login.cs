@@ -50,10 +50,20 @@ namespace PrjReconocimientoF.Formularios
         {
             Reconocer();
         }
-
+        //es es el boton ingresar 
         private void BtnDesconectar_Click(object sender, EventArgs e)
         {
-
+            //compara el nombre que tiene la imagen 
+            if (lblNadie.Text== "Administrador")//si es administrador entra
+            {
+                Frm_Principal frm = new Frm_Principal();
+                frm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("No puedes Ingresar a este sistema", "No eres el Administrador");
+            }
         }
 
         //int cont = 0;
@@ -94,7 +104,7 @@ namespace PrjReconocimientoF.Formularios
             try
             {
                 //Iniciar el dispositivo de captura
-                grabber = new Capture();
+                grabber = new Capture(1);
                 grabber.QueryFrame();
                 //Iniciar el evento FrameGraber
                 Application.Idle += new EventHandler(FrameGrabber);
@@ -139,16 +149,16 @@ namespace PrjReconocimientoF.Formularios
                         //Dibujar el nombre para cada rostro detectado y reconocido
                         currentFrame.Draw(name, ref font, new Point(f.rect.X - 2, f.rect.Y - 2), new Bgr(Color.YellowGreen));
                         ClsNegReconocimientoFacial obj = new ClsNegReconocimientoFacial();
-                        int j = 0;
-                        foreach (DataRow row in obj.ListarAdministrador().Rows)
-                        {
-                            if (lblNadie.Text.Equals(row[j]))
-                            {
-                                Frm_Principal frm = new Frm_Principal();
-                                frm.Show();
-                                this.Hide();
-                            }
-                        }
+                        //int j = 0;
+                        //foreach (DataRow row in obj.ListarAdministrador().Rows)
+                        //{
+                        //    if (lblNadie.Text.Equals(row[j]))
+                        //    {
+                        //        Frm_Principal frm = new Frm_Principal();
+                        //        frm.Show();
+                        //        this.Hide();
+                        //    }
+                        //}
                     }
 
                     NamePersons[t - 1] = name;
@@ -156,6 +166,18 @@ namespace PrjReconocimientoF.Formularios
                     //Establecer el nùmero de rostros detectados
                     //lblNumeroDetect.Text = facesDetected[0].Length.ToString();
                     lblNadie.Text = name;
+
+                    //compara el nombre que tiene la imagen 
+                    if (lblNadie.Text == "fddxb")//si es administrador entra
+                    {
+                        Frm_Principal frm = new Frm_Principal();
+                        frm.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No puedes Ingresar a este sistema", "No eres el Administrador");
+                    }
 
                 }
                 t = 0;

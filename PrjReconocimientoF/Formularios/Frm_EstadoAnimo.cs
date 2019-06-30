@@ -22,7 +22,8 @@ namespace PrjReconocimientoF.Formularios
 {
     public partial class Frm_EstadoAnimo : Form
     {
-        const string subcriptionKey = "6b7cb2d9555f41439b7b5c86495a65e4";
+
+        const string subcriptionKey = "2fa290bdbeeb4663a7cc0f93ed9b76e7";
         const string uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
         public int heigth, width;
         public string[] Labels;
@@ -51,7 +52,7 @@ namespace PrjReconocimientoF.Formularios
         {
             try
             {//inicio el dispositivo de captura
-                grabber = new Capture();
+                grabber = new Capture(1);
                 grabber.QueryFrame();
                 //iniciar el evento framegraber
                 Application.Idle += new EventHandler(FrameGrabber);
@@ -145,7 +146,7 @@ namespace PrjReconocimientoF.Formularios
             {
                 dbc.obtenerByLesImagen();
                 //carga de caras y etiquetas para cada imagen
-                string[] labels = dbc.Name;
+                string[] Labels = dbc.Name;
                 NumLabels = dbc.TotalUser;
                 ContTrain = NumLabels;
                 for (int tf = 0; tf < NumLabels; tf++)
@@ -153,7 +154,7 @@ namespace PrjReconocimientoF.Formularios
                     con = tf;
                     Bitmap bmp = new Bitmap(dbc.ConvertByteToImg(con));
                     trainingImages.Add(new Image<Gray, byte>(bmp));//carga ka foto con este nombre
-                    //labels.Add(Labels[tf]);
+                    labels.Add(Labels[tf]);
                 }
 
             }
@@ -166,7 +167,7 @@ namespace PrjReconocimientoF.Formularios
         {
             HttpClient client = new HttpClient();
             client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-key", subcriptionKey);
-            string requestParameters = "retunFaceId-false&returnFaceLandmarks-false&returnFaceRectangle-false&returnFaceAttributes-emotion";
+            string requestParameters = "retunFaceId-true&returnFaceLandmarks-false&returnFaceRectangle-false&returnFaceAttributes-emotion";
 
             string uri = uriBase + "?" + requestParameters;
             HttpResponseMessage response;
@@ -180,11 +181,11 @@ namespace PrjReconocimientoF.Formularios
                 {
                     response = await client.PostAsync(uri, content);
                     string contentString = await response.Content.ReadAsStringAsync();
-                    label5.Text = JsonPrettyPrint(contentString);
+                    label1.Text = JsonPrettyPrint(contentString);
                 }
                 catch (HttpRequestException)
                 {
-                    MessageBox.Show("No se puede enviar la peticion a hhttp", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("No se puede enviar la peticion a HTTP", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
@@ -265,6 +266,7 @@ namespace PrjReconocimientoF.Formularios
             }
             else
             {
+                
                 texto = texto.Remove(0, texto.IndexOf("anger"));
                 texto = texto.Replace('"', ' ');
                 texto = texto.Replace('}', ' ');

@@ -82,6 +82,7 @@
             this.btn20 = new System.Windows.Forms.Button();
             this.btn19 = new System.Windows.Forms.Button();
             this.pcbvolver = new System.Windows.Forms.PictureBox();
+            this.cmbCamara = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
@@ -299,6 +300,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.cmbCamara);
             this.panel1.Controls.Add(this.pteclado);
             this.panel1.Controls.Add(this.BtnLimpiar);
             this.panel1.Controls.Add(this.groupBox3);
@@ -745,6 +747,14 @@
             this.pcbvolver.TabStop = false;
             this.pcbvolver.Click += new System.EventHandler(this.pcbvolver_Click);
             // 
+            // cmbCamara
+            // 
+            this.cmbCamara.FormattingEnabled = true;
+            this.cmbCamara.Location = new System.Drawing.Point(23, 197);
+            this.cmbCamara.Name = "cmbCamara";
+            this.cmbCamara.Size = new System.Drawing.Size(185, 21);
+            this.cmbCamara.TabIndex = 66;
+            // 
             // Frm_RegistroTrabajador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -829,5 +839,6 @@
         private System.Windows.Forms.Button btnretroceso;
         private System.Windows.Forms.Button btnpunto;
         private System.Windows.Forms.Button btncoma;
+        private System.Windows.Forms.ComboBox cmbCamara;
     }
 }
