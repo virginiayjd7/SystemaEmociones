@@ -621,6 +621,16 @@ namespace PrjReconocimientoF.Formularios
             pteclado.Visible = false;
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void imageBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void BtnDetectar_Click(object sender, EventArgs e)
         {
             pteclado.Visible = false;

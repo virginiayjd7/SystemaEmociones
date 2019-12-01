@@ -42,5 +42,10 @@ namespace PrjReconocimientoF.Formularios
             frm.Show();
             this.Hide();
         }
+
+        private void Frm_Movil_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

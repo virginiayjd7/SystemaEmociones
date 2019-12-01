@@ -23,7 +23,7 @@ namespace PrjReconocimientoF.Formularios
     public partial class Frm_EstadoAnimo : Form
     {
 
-        const string subcriptionKey = "2fa290bdbeeb4663a7cc0f93ed9b76e7";
+        const string subscriptionKey = "2fa290bdbeeb4663a7cc0f93ed9b76e7";
         const string uriBase = "https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
         public int heigth, width;
         public string[] Labels;
@@ -33,7 +33,7 @@ namespace PrjReconocimientoF.Formularios
         //DECLARANDO TODAS LAS VARIABLES, vectores y  haarcascades
         Image<Bgr, Byte> currentFrame;
         Capture grabber;
-        HaarCascade Face;
+        HaarCascade face;
         MCvFont font = new MCvFont(FONT.CV_FONT_HERSHEY_TRIPLEX, 0.4d, 0.4d);
         Image<Gray, byte> result = null;
         Image<Gray, byte> gray = null;
@@ -52,7 +52,7 @@ namespace PrjReconocimientoF.Formularios
         {
             try
             {//inicio el dispositivo de captura
-                grabber = new Capture(1);
+                grabber = new Capture();
                 grabber.QueryFrame();
                 //iniciar el evento framegraber
                 Application.Idle += new EventHandler(FrameGrabber);
@@ -75,7 +75,7 @@ namespace PrjReconocimientoF.Formularios
                 gray = currentFrame.Convert<Gray, Byte>();
 
                 //detector de rostros
-                MCvAvgComp[][] facesDetected = gray.DetectHaarCascade(Face, 1.2, 10, Emgu.CV.CvEnum.HAAR_DETECTION_TYPE.DO_CANNY_PRUNING, new Size(20, 20));
+                MCvAvgComp[][] facesDetected = gray.DetectHaarCascade(face, 1.2, 10, Emgu.CV.CvEnum.HAAR_DETECTION_TYPE.DO_CANNY_PRUNING, new Size(20, 20));
                 //ACCION PARA CADA ELEMENTO DETECTADO
                 foreach (MCvAvgComp f in facesDetected[0])
                 {
@@ -86,9 +86,9 @@ namespace PrjReconocimientoF.Formularios
                     if (trainingImages.ToArray().Length != 0)
                     {
                         //CLASE PARA RECONOCIMIENTO CON EL NUMERO DE IMAGENES
-                        MCvTermCriteria termCriteria = new MCvTermCriteria(ContTrain, 0.001);
+                        MCvTermCriteria termCrit = new MCvTermCriteria(ContTrain, 0.001);
                         //CLASE ELIGEN PARA RECONOCIMIENTO DE ROSTRO
-                        EigenObjectRecognizer recognizer = new EigenObjectRecognizer(trainingImages.ToArray(), labels.ToArray(), ref termCriteria);
+                        EigenObjectRecognizer recognizer = new EigenObjectRecognizer(trainingImages.ToArray(), labels.ToArray(), ref termCrit);
                         var fa = new Image<Gray, byte>[trainingImages.Count];//currenframe.conver<bitmap>
                         name = recognizer.Recognize(result);
                         //dibujar el nombre para cada rostro detectado y rconocido
@@ -131,7 +131,7 @@ namespace PrjReconocimientoF.Formularios
         {
             Application.Idle -= new EventHandler(FrameGrabber);
             grabber.Dispose();
-            imageBoxFrameGrabber.ImageLocation = "img/1.png";
+            imageBoxFrameGrabber.ImageLocation = "img/1.jpg";
             lblNadie.Text = string.Empty;
             lblNumeroDetect.Text = string.Empty;
             BtnDesconectar.Text = "conectar";
@@ -141,7 +141,7 @@ namespace PrjReconocimientoF.Formularios
             InitializeComponent();
             heigth = this.Height; width = this.Width;
             //cargamos la deteeicion de las caras por haarcascade
-            Face = new HaarCascade("haarcascade_frontalface_default.xml");
+            face = new HaarCascade("haarcascade_frontalface_default.xml");
             try
             {
                 dbc.obtenerByLesImagen();
@@ -166,11 +166,14 @@ namespace PrjReconocimientoF.Formularios
         async void MakeAnalysisRequest(Image imagen)
         {
             HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-key", subcriptionKey);
-            string requestParameters = "retunFaceId-true&returnFaceLandmarks-false&returnFaceRectangle-false&returnFaceAttributes-emotion";
+            client.DefaultRequestHeaders.Add(
+                "Ocp-Apim-Subscription-Key", subscriptionKey);
+            string requestParameters = "returnFaceId=true&returnFaceLandmarks=false&returnFaceRectagle=false&returnFaceAttributes=emotion";
 
             string uri = uriBase + "?" + requestParameters;
+
             HttpResponseMessage response;
+
             byte[] byteData = ImageToByteArray(imagen);
 
             using (ByteArrayContent content = new ByteArrayContent(byteData))
@@ -181,13 +184,34 @@ namespace PrjReconocimientoF.Formularios
                 {
                     response = await client.PostAsync(uri, content);
                     string contentString = await response.Content.ReadAsStringAsync();
-                    label1.Text = JsonPrettyPrint(contentString);
+                    label3.Text = JsonPrettyPrint(contentString);
                 }
                 catch (HttpRequestException)
                 {
                     MessageBox.Show("No se puede enviar la peticion a HTTP", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
+        }
+
+        private void BtnDesconectar_Click(object sender, EventArgs e)
+        {
+            switch (BtnDesconectar.Text)
+            {
+                case "conectar":
+                    Reconocer();
+                    BtnDesconectar.Text = "desconectar";
+                    break;
+
+                case "desconctar":
+                    Desconectar();
+                    break;
+
+            }
+        }
+
+        private void imageBoxFrameGrabber_Click(object sender, EventArgs e)
+        {
 
         }
 
@@ -200,7 +224,7 @@ namespace PrjReconocimientoF.Formularios
             }
         }
 
-        static string JsonPrettyPrint(string json)
+     public   static string JsonPrettyPrint(string json)
         {
             if (string.IsNullOrEmpty(json))
                 return string.Empty;
@@ -221,6 +245,7 @@ namespace PrjReconocimientoF.Formularios
                         if (quote) ignore = !ignore;
                         break;
                 }
+
                 if (quote)
                     sb.Append(ch);
                 else
@@ -233,7 +258,6 @@ namespace PrjReconocimientoF.Formularios
                             sb.Append(Environment.NewLine);
                             sb.Append(new string(' ', ++offset * indentLength));
                             break;
-
                         case '}':
                         case ']':
                             sb.Append(Environment.NewLine);
@@ -241,14 +265,13 @@ namespace PrjReconocimientoF.Formularios
                             sb.Append(ch);
                             break;
                         case ',':
+                            sb.Append(ch);
                             sb.Append(Environment.NewLine);
                             sb.Append(new string(' ', offset * indentLength));
-                            sb.Append(ch);
                             break;
-
                         case ':':
-                            sb.Append(' ');
                             sb.Append(ch);
+                            sb.Append(' ');
                             break;
                         default:
                             if (ch != ' ') sb.Append(ch);
@@ -267,7 +290,7 @@ namespace PrjReconocimientoF.Formularios
             else
             {
                 
-                texto = texto.Remove(0, texto.IndexOf("anger"));
+                texto = texto.Remove( 0,texto.IndexOf("anger"));
                 texto = texto.Replace('"', ' ');
                 texto = texto.Replace('}', ' ');
                 texto = texto.Replace(']', ' ');
@@ -275,7 +298,8 @@ namespace PrjReconocimientoF.Formularios
                 texto = texto.Replace("            ", "");
                 texto = texto.Replace("anger", " Molesto");
                 texto = texto.Replace("contenpt", " Asqueado");
-                texto = texto.Replace("disgust", " Asustado");
+                texto = texto.Replace("disgust", " Disgustado");
+                texto = texto.Replace("fear", " Asustado");
                 texto = texto.Replace("happiness", " Feliz");
                 texto = texto.Replace("neutral", " Neutral");
                 texto = texto.Replace("sadness", " Triste");
@@ -286,18 +310,8 @@ namespace PrjReconocimientoF.Formularios
     
     private void BtnDetectar_Click(object sender, EventArgs e)
         {
-            switch (BtnDesconectar.Text)
-            {
-                case "conectar":
-                    Reconocer();
-                    BtnDesconectar.Text = "desconectar";
-                    break;
-
-                case "desconctar":
-                    Desconectar();
-                    break;
-
-            }
+            Reconocer();
+            
 
         }
 

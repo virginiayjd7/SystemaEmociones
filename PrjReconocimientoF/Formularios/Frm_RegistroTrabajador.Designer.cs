@@ -46,6 +46,7 @@
             this.imageBoxFrameGrabber = new Emgu.CV.UI.ImageBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCamara = new System.Windows.Forms.ComboBox();
             this.pteclado = new System.Windows.Forms.Panel();
             this.btnShitt = new System.Windows.Forms.Button();
             this.btnEspacio = new System.Windows.Forms.Button();
@@ -82,7 +83,6 @@
             this.btn20 = new System.Windows.Forms.Button();
             this.btn19 = new System.Windows.Forms.Button();
             this.pcbvolver = new System.Windows.Forms.PictureBox();
-            this.cmbCamara = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imageBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageBoxFrameGrabber)).BeginInit();
@@ -118,6 +118,7 @@
             this.imageBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBox2.TabIndex = 36;
             this.imageBox2.TabStop = false;
+            this.imageBox2.Click += new System.EventHandler(this.imageBox2_Click);
             // 
             // label4
             // 
@@ -317,6 +318,15 @@
             this.panel1.Size = new System.Drawing.Size(347, 562);
             this.panel1.TabIndex = 56;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // cmbCamara
+            // 
+            this.cmbCamara.FormattingEnabled = true;
+            this.cmbCamara.Location = new System.Drawing.Point(23, 197);
+            this.cmbCamara.Name = "cmbCamara";
+            this.cmbCamara.Size = new System.Drawing.Size(185, 21);
+            this.cmbCamara.TabIndex = 66;
             // 
             // pteclado
             // 
@@ -746,14 +756,6 @@
             this.pcbvolver.TabIndex = 64;
             this.pcbvolver.TabStop = false;
             this.pcbvolver.Click += new System.EventHandler(this.pcbvolver_Click);
-            // 
-            // cmbCamara
-            // 
-            this.cmbCamara.FormattingEnabled = true;
-            this.cmbCamara.Location = new System.Drawing.Point(23, 197);
-            this.cmbCamara.Name = "cmbCamara";
-            this.cmbCamara.Size = new System.Drawing.Size(185, 21);
-            this.cmbCamara.TabIndex = 66;
             // 
             // Frm_RegistroTrabajador
             // 

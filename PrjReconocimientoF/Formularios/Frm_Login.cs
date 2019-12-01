@@ -50,6 +50,12 @@ namespace PrjReconocimientoF.Formularios
         {
             Reconocer();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //es es el boton ingresar 
         private void BtnDesconectar_Click(object sender, EventArgs e)
         {
@@ -104,7 +110,7 @@ namespace PrjReconocimientoF.Formularios
             try
             {
                 //Iniciar el dispositivo de captura
-                grabber = new Capture(1);
+                grabber = new Capture();
                 grabber.QueryFrame();
                 //Iniciar el evento FrameGraber
                 Application.Idle += new EventHandler(FrameGrabber);

@@ -203,31 +203,6 @@ C:\Users\virginia\Desktop\ProyectoRcmtoFacial_Estado-de-Animo\RECONOCIMIENTO FAC
 C:\Users\virginia\Desktop\ProyectoRcmtoFacial_Estado-de-Animo\RECONOCIMIENTO FACIAL\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.exe
 C:\Users\virginia\Desktop\ProyectoRcmtoFacial_Estado-de-Animo\RECONOCIMIENTO FACIAL\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.pdb
 C:\Users\virginia\Desktop\ProyectoRcmtoFacial_Estado-de-Animo\RECONOCIMIENTO FACIAL\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.FrmRegistroface.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.exe.config
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.exe
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.pdb
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Google.Protobuf.dll
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Microsoft.Net.Http.Headers.dll
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\MySql.Data.dll
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\System.Buffers.dll
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\ZedGraph.dll
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Emgu.CV.UI.xml
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Google.Protobuf.xml
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Microsoft.Net.Http.Headers.xml
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\MySql.Data.xml
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csprojAssemblyReference.cache
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.FrmMovil.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.FrmReconocimientoFacial.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.FrmRegistro.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.FrmPrincipal.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.FrmRegistroface.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Properties.Resources.resources
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.GenerateResource.cache
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.CoreCompileInputs.cache
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.CopyComplete
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.exe
-C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.pdb
 C:\Users\Usuario\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.exe.config
 C:\Users\Usuario\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.exe
 C:\Users\Usuario\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.pdb
@@ -311,3 +286,30 @@ C:\Users\Usuario\Desktop\INFORMES SO1\slncamara\SystemaEmociones-master\PrjRecon
 C:\Users\Usuario\Desktop\INFORMES SO1\slncamara\SystemaEmociones-master\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.CopyComplete
 C:\Users\Usuario\Desktop\INFORMES SO1\slncamara\SystemaEmociones-master\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.exe
 C:\Users\Usuario\Desktop\INFORMES SO1\slncamara\SystemaEmociones-master\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.pdb
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.exe.config
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.exe
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\PrjReconocimientoF.pdb
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Google.Protobuf.dll
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Microsoft.Net.Http.Headers.dll
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\MySql.Data.dll
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\System.Buffers.dll
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Google.Protobuf.xml
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\Microsoft.Net.Http.Headers.xml
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\bin\Debug\MySql.Data.xml
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csprojAssemblyReference.cache
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.Frm_EstadoAnimo.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.Frm_Login.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.Frm_Movil.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.Frm_AsitenciaTrabajador.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.Frm_RegistroTrabajador.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Formularios.Frm_Principal.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Properties.Resources.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.Reportes.FrmReportes01.resources
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.GenerateResource.cache
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\RdlCompile.cache
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\RdlCompile.compiled
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.CoreCompileInputs.cache
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.csproj.CopyComplete
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.exe
+C:\Users\virginia\Documents\GitHub\SystemaEmociones\PrjReconocimientoF\obj\Debug\PrjReconocimientoF.pdb
