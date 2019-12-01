@@ -118,7 +118,6 @@
             this.imageBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imageBox2.TabIndex = 36;
             this.imageBox2.TabStop = false;
-            this.imageBox2.Click += new System.EventHandler(this.imageBox2_Click);
             // 
             // label4
             // 
@@ -318,7 +317,6 @@
             this.panel1.Size = new System.Drawing.Size(347, 562);
             this.panel1.TabIndex = 56;
             this.panel1.Click += new System.EventHandler(this.panel1_Click);
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // cmbCamara
             // 

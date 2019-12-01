@@ -106,6 +106,13 @@ namespace PrjReconocimientoF.Formularios
             frm.Show();
             this.Hide();
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            //Frm_Movil frm = new Frm_Movil();
+            //frm.Show();
+            //this.Hide();
+        }
     }
      
 }

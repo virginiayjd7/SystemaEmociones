@@ -194,9 +194,9 @@ namespace PrjReconocimientoF.Formularios
 
         private void panel3_Click(object sender, EventArgs e)
         {
-            Frm_Movil frm = new Frm_Movil();
-            frm.Show();
-            this.Hide();
+            //Frm_Movil frm = new Frm_Movil();
+            //frm.Show();
+            //this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -235,9 +235,9 @@ namespace PrjReconocimientoF.Formularios
 
         private void label1_Click(object sender, EventArgs e)
         {
-            Frm_RegistroTrabajador frm = new Frm_RegistroTrabajador();
-            frm.Show();
-            this.Hide();
+            //Frm_RegistroTrabajador frm = new Frm_RegistroTrabajador();
+            //frm.Show();
+            //this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -331,9 +331,9 @@ namespace PrjReconocimientoF.Formularios
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            Frm_Principal frm = new Frm_Principal();
-            frm.Show();
-            this.Hide();
+            //Frm_Principal frm = new Frm_Principal();
+            //frm.Show();
+            //this.Hide();
         }
 
         private bool IsInSizeGrip(Point tmp)

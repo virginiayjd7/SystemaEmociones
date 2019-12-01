@@ -50,19 +50,13 @@ namespace PrjReconocimientoF.Formularios
         {
             Reconocer();
         }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         //es es el boton ingresar 
         private void BtnDesconectar_Click(object sender, EventArgs e)
         {
             //compara el nombre que tiene la imagen 
             if (lblNadie.Text== "Administrador")//si es administrador entra
             {
-                Frm_Principal frm = new Frm_Principal();
+                Frm_Movil frm = new Frm_Movil();
                 frm.Show();
                 this.Hide();
             }
@@ -110,7 +104,7 @@ namespace PrjReconocimientoF.Formularios
             try
             {
                 //Iniciar el dispositivo de captura
-                grabber = new Capture();
+                grabber = new Capture(1);
                 grabber.QueryFrame();
                 //Iniciar el evento FrameGraber
                 Application.Idle += new EventHandler(FrameGrabber);
@@ -174,16 +168,16 @@ namespace PrjReconocimientoF.Formularios
                     lblNadie.Text = name;
 
                     //compara el nombre que tiene la imagen 
-                    if (lblNadie.Text == "fddxb")//si es administrador entra
-                    {
-                        Frm_Principal frm = new Frm_Principal();
-                        frm.Show();
-                        this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("No puedes Ingresar a este sistema", "No eres el Administrador");
-                    }
+                    //if (lblNadie.Text == "fddxb")//si es administrador entra
+                    //{
+                    //    Frm_Principal frm = new Frm_Principal();
+                    //    frm.Show();
+                    //    this.Hide();
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show("No puedes Ingresar a este sistema", "No eres el Administrador");
+                    //}
 
                 }
                 t = 0;

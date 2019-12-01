@@ -26,21 +26,19 @@ namespace PrjReconocimientoF.Formularios
 
         private void pcbreconocimiento_Click(object sender, EventArgs e)
         {
-            Frm_Login frm = new Frm_Login();
+           Frm_Principal frm = new Frm_Principal();
             frm.Show();
-            this.Hide();
+          
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+           
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Frm_Principal frm = new Frm_Principal();
-            frm.Show();
-            this.Hide();
+            
         }
 
         private void Frm_Movil_Load(object sender, EventArgs e)

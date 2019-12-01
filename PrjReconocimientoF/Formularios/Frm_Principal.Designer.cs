@@ -115,6 +115,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(88, 43);
             this.panel3.TabIndex = 67;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // Frm_Principal
             // 
