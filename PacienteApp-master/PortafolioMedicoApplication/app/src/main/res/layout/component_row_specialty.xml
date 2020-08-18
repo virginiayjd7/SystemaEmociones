@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/elemento_especialidad"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_background_image"
+            android:layout_gravity="center">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_specialty_row"
+                android:src="@mipmap/ic_launcher_round"
+                android:layout_width="70dp"
+                android:layout_height="70dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name_specialty_row"
+            android:layout_gravity="center"
+            android:text="Odontologia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
